@@ -16,7 +16,7 @@ import com.aurelien.Service.CarService;
 	@RequestMapping("/cars")
 	public class CarController 
 	{
-		@Autowired
+		@Autowired(required=true)
 		private CarService carService;
 		
 		@RequestMapping(method = RequestMethod.GET)

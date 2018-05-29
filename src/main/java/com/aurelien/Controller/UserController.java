@@ -10,15 +10,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-
 import com.aurelien.Entity.User;
 import com.aurelien.Service.UserService;
 
 	@RestController
-	@RequestMapping("/students")
+	@RequestMapping("/users")
 	public class UserController 
 	{
-		@Autowired
+		@Autowired(required=true)
 		private UserService userService;
 		
 		@RequestMapping(method = RequestMethod.GET)

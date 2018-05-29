@@ -3,10 +3,12 @@ package com.aurelien.Service;
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.aurelien.Dao.UserDao;
 import com.aurelien.Entity.User;
 
+@Service
 public class UserService 
 {
 	@Autowired
